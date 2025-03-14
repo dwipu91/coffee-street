@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-color: #f6ebda;
+  --bg: #f6ebda;
+  --bg-1: #f9d9aa;
+  --bg-icon: #ff902b;
+  --border: #f9d9aa;
+  --glass: #ffffff;
+  --glass_1: rgba(255, 255, 255, 0.623) f;
+  --light: #7e7d7a;
+  --bg-btn: #2f2105;
+  --dark: #2f2105;
+  --border-color: rgba(236, 236, 224, 0.452);
+
+  --text: #ff902a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 80rem;
+  margin: auto;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+strong {
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+/* header css start */
+header {
+  background-color: var(--bg);
+  /* margin-bottom: 10rem; */
+  padding: 10px 0 15rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.headMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  width: 1110px;
+  margin: auto;
+}
+
+.logo img {
+  width: 9.34rem;
+  height: 1.92rem;
+}
+
+.menu nav ul {
+  display: flex;
+  gap: 1rem;
+}
+.menu nav ul li a {
+  color: black;
+}
+.menu nav ul li:first-child a {
+  color: var(--bg-icon);
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.icon-search {
+  background: #fff;
+  border-radius: 2rem;
+  padding: 0.6rem 0.8rem;
+}
+.icon-search input {
+}
+.icon-search i {
+  position: relative;
+  top: 0.15rem;
+}
+.icon-shop i:hover {
+  color: var(--bg-icon);
+}
+/* header css end */
+
+/* headContent content css start */
+.headContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.headContent-left {
+  height: 18, 75rem;
+  width: 31.125rem;
+}
+.headContent-left h1 {
+  font-size: 3rem;
+  line-height: 100%;
+}
+.headContent-left h1 span {
+  color: var(--bg-icon);
+}
+.headContent-left p {
+  font-size: 1.1rem;
+  color: var(--light);
+}
+.headContent-seed {
+  position: absolute;
+  height: 20rem;
+  width: 30rem;
+  top: -1rem;
+  right: -2rem;
+  z-index: -1;
+}
+
+.headContent-btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+.headContent-btn button {
+  background: var(--bg-btn);
+  border-radius: 3rem;
+  color: var(--glass);
+  padding: 0.6rem 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 0.6rem;
+}
+.headContent-btn button i {
+  background: var(--bg-icon);
+  font-size: 0.7rem;
+  padding: 0.4rem;
+  border-radius: 50%;
+  position: relative;
+  top: 0.01rem;
+}
+.headContent-btn li {
+  color: var(--bg-icon);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.headContent-right {
+  position: relative;
+  top: 2rem;
+}
+.headContent-right .headContent-cup {
+  background: var(--dark);
+  border-radius: 50%;
+  padding: 1.4rem;
+}
+.headContent-right img {
+  height: 15rem;
+  width: 15rem;
+}
+
+.cup-one,
+.cup-two,
+.cup-three {
+  position: absolute;
+
+  background: #ffff;
+  border: 0.3rem solid rgba(236, 236, 224, 0.452);
+
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+.cup-one {
+  top: 3rem;
+  left: -4rem;
+}
+.cup-two {
+  top: 5rem;
+  right: -2rem;
+}
+.cup-three {
+  bottom: 0rem;
+  left: 1rem;
+}
+.cup-four img {
+  position: absolute;
+  top: 5rem;
+  left: 0rem;
+  height: 9rem;
+  width: 18rem;
+}
+
+.list-last {
+  margin-left: 7rem;
+  padding-top: 8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  position: relative;
+}
+.list-last h2 span {
+  border-bottom: 3px solid var(--bg-icon);
+}
+
+.list-last img {
+  position: absolute;
+  top: 1rem;
+  left: -7rem;
+}
+/* headContent content css end */
+
+/* service css start */
+.service {
+  position: relative;
+}
+.service_top {
+  position: absolute;
+
+  top: -10rem;
+  left: 4.5rem;
+  z-index: 5;
+  width: 90%;
+  border-radius: 4rem;
+  background-image: url(image/Rectangle\ 2.png);
+}
+.s_top_one {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0 4rem;
+}
+.s_top_one_item {
+  position: relative;
+  top: -3rem;
+  background: white;
+  padding: 1rem;
+  border: 0.4rem solid #faf3e9;
+  border-radius: 5%;
+}
+.s_top_one_item img {
+}
+.s_top_one_item h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.s_top_one_item h5 strong {
+  font-weight: 500;
+}
+.s_top_one_item button {
+  background: var(--bg-icon);
+  color: var(--glass);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/*   */
+.service_choose {
+  padding: 17rem 5.5rem 10rem 5.5rem;
+}
+.service_choose h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.service_choose h3 span {
+  border-bottom: 0.2rem solid var(--bg-icon);
+}
+.service_choose_one {
+  display: flex;
+  justify-content: space-around;
+
+  gap: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.service_one img {
+  height: 6rem;
+  width: 6rem;
+  margin: auto;
+}
+.service_one h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+  padding: 1rem 0;
+}
+.service_one p {
+  font-size: 0.8rem;
+  color: var(--light);
+  font-weight: 500;
+}
+
+/* service css end */
+
+/* about css start */
+.about {
+  background: #f6ebda;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.about-l {
+  flex: 1;
+
+  position: relative;
+  top: -8rem;
+  left: 0;
+}
+.about-r {
+  flex: 1;
+}
+.about-r h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark);
+  padding-bottom: 2rem;
+}
+.about-r h2 span {
+  border-bottom: 0.2rem solid var(--bg-icon);
+}
+.about-r h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+  padding-bottom: 1rem;
+}
+.about-r p {
+  font-size: 0.8rem;
+  color: var(--light);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+.about-r button {
+  background: var(--bg-btn);
+  color: var(--text);
+  padding: 0.6rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  transition: ease-in-out 0.2s;
+}
+.about-r button:hover {
+  background: var(--bg-icon);
+  color: var(--glass);
+}
+/* about css end */
+
+/* special menu css start */
+.special {
+  padding: 6rem 5rem;
+}
+.special h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark);
+  padding-bottom: 3rem;
+}
+.special h2 span {
+  border-bottom: 0.2rem solid var(--bg-icon);
+}
+.special-item {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.special-items {
+  background: white;
+  border-radius: 2%;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0rem 0rem 1rem var(--bg-btn);
+}
+.imges {
+  position: relative;
+}
+.imges img {
+  border-radius: 2%;
+}
+.imges p {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.55rem;
+  background: var(--glass);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 0.2rem solid var(--border);
+}
+.special-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.special-text h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+  font-weight: 700;
+}
+.special-text p {
+  font-size: 0.8rem;
+  color: var(--light);
+  font-weight: 500;
+}
+.special-text i {
+  background: var(--bg-icon);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  color: white;
+  position: relative;
+}
+/* special menu css end */
+
+/* say section css START  */
+.say {
+  position: relative;
+}
+.say-image-bg {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  opacity: 0.2;
+}
+.say-image-bg img {
+  height: 22rem;
+  width: 100%;
+}
+.say-text {
+  border-radius: 0 2rem 2rem 0;
+  width: 60%;
+  padding: 10rem 5rem;
+  background: var(--border);
+  position: relative;
+}
+.say-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark);
+  padding-bottom: 1rem;
+}
+
+.say-text p {
+  width: 60%;
+  font-size: 1rem;
+  color: var(--light);
+  font-weight: 500;
+}
+
+.say-menbers {
+  position: absolute;
+  top: 6rem;
+  right: 0rem;
+  display: flex;
+
+  gap: 3.5rem;
+}
+.say-member-S-person {
+  position: relative;
+  border: 0.5rem solid var(--glass);
+  border-radius: 0.3rem;
+}
+.say-member-S-person img {
+  height: 16rem;
+  width: 13rem;
+}
+
+.member-text {
+  position: absolute;
+  width: 13rem;
+  height: auto;
+  bottom: 1rem;
+  left: 2rem;
+  background: var(--text);
+  border-radius: 0.6rem;
+  border: 0.2rem solid var(--bg-color);
+  padding: 0.4rem;
+  /* overflow: visible; */
+}
+.member-text h5 {
+  padding-bottom: 0.1rem;
+}
+.member-text p {
+  font-size: small;
+  color: var(--bg-btn);
+}
+/* say section css END   */
+
+/* footer section */
+footer {
+  padding: 3rem;
+}
+.footer-text {
+  background-image: url(image/footer-image.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 3rem;
+  border: 0.4rem solid var(--glass);
+  border-radius: 1rem;
+  color: var(--glass);
+  padding: 6rem 0;
+}
+.footer-text h2 {
+  margin-bottom: 1rem;
+}
+.footer-text p {
+  background: white;
+  width: 40%;
+  padding: 0.4rem;
+  margin: auto;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text p input {
+  outline: none;
+  margin-left: 1rem;
+}
+.footer-text p button {
+  background: var(--bg-btn);
+  padding: 1rem 2rem;
+  color: var(--glass);
+  border-radius: 2rem;
+}
